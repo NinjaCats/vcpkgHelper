@@ -10,5 +10,5 @@ first using ```Set-vcpkgDirPath``` set vcpkg install directory
 > Invoke-vcpkg</br>
 > Search-vcpkg</br>
 > Get-vcpkgInstallList</br>
-> Install-vcpkg</br>
-> Remove-vcpkg</br>
+> Install-vcpkgPackage</br>
+> Remove-vcpkgPackage</br>
