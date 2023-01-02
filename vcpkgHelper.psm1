@@ -49,7 +49,7 @@ function Get-vcpkgInstallList {
     parserLines $lines
 }
 
-function Install-vcpkg {
+function Install-vcpkgPackage {
     param (
         [string] $pakName,
         [string] $plantform = "x64-windows",
@@ -59,7 +59,7 @@ function Install-vcpkg {
     Invoke-vcpkg "install", $commandArgs, $pakName
 }
 
-function Remove-vcpkg {
+function Remove-vcpkgPackage {
     param (
         [string] $pakName,
         [string] $commandArgs = ''
@@ -72,5 +72,5 @@ Export-ModuleMember -Function Set-vcpkgDirPath
 Export-ModuleMember -Function Invoke-vcpkg
 Export-ModuleMember -Function Search-vcpkg
 Export-ModuleMember -Function Get-vcpkgInstallList
-Export-ModuleMember -Function Install-vcpkg
-Export-ModuleMember -Function Remove-vcpkg
+Export-ModuleMember -Function Install-vcpkgPackage
+Export-ModuleMember -Function Remove-vcpkgPackage
