@@ -21,9 +21,10 @@ function Invoke-vcpkg {
 
 function parserLines {
     param (
-        [string[]] $lines
+        [string[]] $lines,
+        [Int16] $skiplines = 0
     )
-    $lines | Select-Object -SkipLast 2 | ForEach-Object {
+    $lines | Select-Object -SkipLast $skiplines | ForEach-Object {
         $columns = $_ -split "\s{2,}|(?<!(version|ES))\s(?=\d)" | Where-Object { $_ }
         [PSCustomObject]@{
             PakageName    = $columns[0]
@@ -38,7 +39,7 @@ function Search-vcpkg {
         [string] $commandArgs = ''
     )
     $lines = Invoke-vcpkg "search", $commandArgs, $pkgName
-    parserLines $lines
+    parserLines $lines -skiplines 2
 }
 
 function Get-vcpkgInstallList {
