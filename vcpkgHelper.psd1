@@ -73,7 +73,7 @@ FunctionsToExport = '*'
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
 CmdletsToExport = 'Get-vcpkgDirPath', 'Get-vcpkgInstallList', 'Install-vcpkgPackage', 
-               'Invoke-vcpkg', 'Remove-vcpkgPackage', 'Search-vcpkg', 
+               'Invoke-vcpkg', 'Remove-vcpkgPackage', 'Find-vcpkg', 
                'Set-vcpkgDirPath'
 
 # Variables to export from this module

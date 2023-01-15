@@ -8,7 +8,7 @@ first using ```Set-vcpkgDirPath``` set vcpkg install directory
 > Get-vcpkgDirPath</br>
 > Set-vcpkgDirPath</br>
 > Invoke-vcpkg</br>
-> Search-vcpkg</br>
+> Find-vcpkg</br>
 > Get-vcpkgInstallList</br>
 > Install-vcpkgPackage</br>
 > Remove-vcpkgPackage</br>

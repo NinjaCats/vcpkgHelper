@@ -33,7 +33,7 @@ function parserLines {
         } 
     }
 }
-function Search-vcpkg {
+function Find-vcpkg {
     param (
         [string] $pkgName,
         [string] $commandArgs = ''
@@ -71,7 +71,7 @@ function Remove-vcpkgPackage {
 Export-ModuleMember -Function Get-vcpkgDirPath
 Export-ModuleMember -Function Set-vcpkgDirPath
 Export-ModuleMember -Function Invoke-vcpkg
-Export-ModuleMember -Function Search-vcpkg
+Export-ModuleMember -Function Find-vcpkg
 Export-ModuleMember -Function Get-vcpkgInstallList
 Export-ModuleMember -Function Install-vcpkgPackage
 Export-ModuleMember -Function Remove-vcpkgPackage
